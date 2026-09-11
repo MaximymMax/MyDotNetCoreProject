@@ -1,4 +1,16 @@
-// See https://aka.ms/new-console-template for more information
 using System;
 
-Console.WriteLine("Hello from main branch!");
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello from main branch!");
+        GreetUser("User");
+        GreetUser("Maksym");
+    }
+
+    static void GreetUser(string name)
+    {
+        Console.WriteLine($"Hello, {name}!");
+    }
+}
